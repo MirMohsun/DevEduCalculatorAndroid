@@ -1,4 +1,4 @@
-package az.devedu.calculator
+package az.devedu.deveducalcondroid
 
 import org.junit.Test
 

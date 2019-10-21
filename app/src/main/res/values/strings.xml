@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Calculator</string>
+    <string name="app_name">DevEduCalcOnDroid</string>
+    <string name="leftNumber">Первое значение</string>
+    <string name="rightNumber">Второе значение</string>
 </resources>

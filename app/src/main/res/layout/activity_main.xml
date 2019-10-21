@@ -25,11 +25,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:autofillHints=""
-            android:inputType="numberDecimal">
-        </EditText>
+            android:hint="@string/leftNumber"
+            android:inputType="numberDecimal"></EditText>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/operator"
             android:layout_width="19dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.01" />
@@ -39,8 +39,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="numberDecimal">
-        </EditText>
+            android:autofillHints=""
+            android:hint="@string/rightNumber"
+            android:inputType="numberDecimal"></EditText>
     </LinearLayout>
 
     <LinearLayout
@@ -55,40 +56,32 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="+">
-        </Button>
+            android:onClick="addition"
+            android:text="+"></Button>
 
         <Button
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-">
-        </Button>
+            android:onClick="subtraction"
+            android:text="-"></Button>
 
         <Button
             android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="/">
-        </Button>
+            android:onClick="division"
+            android:text="/"></Button>
 
         <Button
             android:id="@+id/btn4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="*">
-        </Button>
-
-        <Button
-            android:id="@+id/btn5"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="%">
-        </Button>
+            android:onClick="multiply"
+            android:text="*"></Button>
 
     </LinearLayout>
 
@@ -103,8 +96,43 @@
             android:id="@+id/btn6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:text="=">
-        </Button>
+            android:layout_weight="1"
+            android:onClick="percent"
+            android:text="%"></Button>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="squared"
+            android:text="х²"></Button>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="root"
+            android:text="√‎:"></Button>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Button>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="5dp"
+        android:hint="Результат"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout3" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

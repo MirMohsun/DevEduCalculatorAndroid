@@ -8,8 +8,8 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "az.devedu.calculator"
-        minSdkVersion 15
+        applicationId "az.devedu.deveducalcondroid"
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
